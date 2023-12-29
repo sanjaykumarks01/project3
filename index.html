@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <style>
+
+            body{
+                margin: 0%;
+                max-width: 100%; 
+                 margin: 0 auto;
+                 overflow-x: hidden;
+  
+            }
+            header{
+                background-color: rgb(255, 255, 255);
+                display: block;
+                margin: 0;
+                cursor: pointer;
+                position: fixed;
+                width: auto;
+                height: auto;
+                padding: 24px;
+                margin-top: -40px;
+                z-index: 1000;
+                
+                
+               
+               
+            }
+
+           
+
+            
+              .top{
+                margin: 0 12px;
+                font-size: 16px;
+                font-weight: 600;
+                Font-family: 'Poppins', sans-serif;
+                position: relative;
+                top: -40px;
+                letter-spacing: 3px;
+                line-height: 1.2;
+                margin-bottom: -30px;
+                
+                
+              }  
+           
+            #left-menu{
+                display: inline-block;
+                align-items: center;
+                position: relative;
+                top: 33px;
+                margin-top: -30px;
+                
+               
+            }
+            #right-menu{
+                display: block;
+                position: relative;
+                top: 25px;
+                text-align: right;
+               
+                
+                
+               
+            }
+            
+                
+               
+        
+
+            button{
+                padding: 6px 25px;
+                background-color: #91ac41;
+                border: 0;
+                outline: none;
+                color: white;
+                cursor: pointer;
+                margin-right: 32px;
+                
+            }
+
+            .mobile-button{
+                display: none;
+            }
+            #dropdown{
+                
+               
+                display: none ;
+                Font-family: 'Poppins', sans-serif;
+                border-top: 2px solid rgb(170, 210, 54);
+                Shadow: 0 2px 5px #e7e7e7;
+                background-color: rgb(255, 255, 255);
+                width: 150px;
+                text-align: center;
+                padding-bottom: 12px;
+                box-sizing: border-box;
+                bottom: 50;
+                position: absolute;
+                top: 10px;
+                left: -16px;
+                
+                
+                
+
+                
+
+                
+            }
+            #wraper:hover 
+            #dropdown{
+                display: block;
+                
+            }
+
+            .drop-item{
+                
+                border: 0;
+                border-bottom: 1px solid rgb(213, 213, 213);
+                margin-left: 22px;
+                margin-right: 22px;
+                letter-spacing: 0.5px;
+                font-size: 14px;
+                font-weight: 400;
+                
+
+                text-align: left;
+            }
+
+            #wraper{
+                display: inline-block;
+                position: sticky;
+            }
+            
+            #part-two {
+                background-image: url('https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png');
+                height: 700px;
+                background-size: cover;
+                background-position: center;
+            }
+            .p2h1{
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                letter-spacing: 8.8px;
+                line-height: 1.2;
+                font-size: 44px;
+                text-align: center;
+                padding: 254px 250px 25px 250px;
+
+                
+            }
+            .p2p1{
+                text-align: center;
+                Font-Family: 'Poppins', sans-serif;
+                 font-size: 14px;
+             Letter-Spacing: 0.5px;
+                font-weight:400;
+                Color : #8b8b99;
+                padding: 0 250px 0 250px;
+                line-height: 1.3;
+            }
+
+           
+
+            #grid-container{
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+
+            }
+
+            
+           
+            .steps1{
+
+                
+                background-color: #86e3c4
+                 
+               
+            }
+            .steps2{
+
+                
+                background-color: #8fafd8
+ 
+
+            }  
+            
+            .steps3{
+
+                
+                background-color: #d28f73
+            }
+
+            .steps4{
+                background-color: chartreuse;
+                
+            }
+
+            .p3h1{
+                text-align: center;
+                color: white;
+            }
+
+            .p3p1{
+                text-align: center;
+                padding: 0 48px 100px 48px;
+                letter-spacing: 3.9;
+                line-height: 1.3;
+                color: white;
+            }
+
+            .part-three{
+                height: auto;
+                background-color:  #f7eee2;
+            }
+
+            .p4p1{
+            Color: #91ac41;
+            font-size: 24px;
+            Font-Family: 'Caveat', cursive; 
+            
+            margin: 0;
+            text-align: center;
+            padding-top: 120px;
+            padding-bottom: 0;
+            margin-bottom: 0%;
+
+
+            
+            }
+         
+
+            .p4h1{
+                Font-Family: 'Poppins', sans-serif;
+                 font-size: 44px;
+                Font-weight: 600;
+                color: black;
+                text-align: center;
+                padding-bottom: 0;
+                padding-top: 0;
+               margin-bottom: 0;
+                 margin-top: 0;
+
+            }
+
+            .p4p2{
+            Font-Family: 'Poppins', sans-serif;
+             font-size: 16px;
+            font-weight: 500;
+            Color: #8b8b99;
+            Letter-Spacing: 0.5px;
+            text-align: center;
+            margin-bottom: 90px;
+
+            
+          
+           
+            }
+
+            
+
+           
+            .grid-container2{
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                padding: 0 70px 0 70px;
+            }
+
+            .p4h2{
+                text-align: center;
+                Font-Family: 'Poppins', sans-serif; 
+                font-size: 24px;
+                font-weight: 600;
+                padding: 0 31px;
+            }
+
+           
+
+
+            .p4p3{
+                text-align: center;
+                Font-Family: 'Poppins', sans-serif; 
+                font-size: 16px;
+                Letter-Spacing: 0.5px;
+                font-weight: 500;
+                Color: #8b8b99;
+                padding:0 41px;
+                padding-bottom: 54px;
+            }
+
+            .part-four{
+                height: auto;
+                padding-bottom: 44px;
+            }
+
+            .grid-container3{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                margin: 0 100px 0 100px;
+                grid-gap: 24px;
+                
+            }
+            @keyframes zoom {
+  from {
+    transform: scale(1); /* Initial scale */
+  }
+  to {
+    transform: scale(1.05); /* Final scale */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+            .grid11:hover{
+                animation: zoom 1s forwards  ;
+                
+                
+                cursor: pointer;
+            }
+
+            .p5h1{
+                Font-Family: 'Poppins', sans-serif; 
+                font-size: 14px;
+                font-weight: 600;
+                text-align: center;
+            }
+            
+            .p5p1{
+                Font-Family: 'Poppins', sans-serif; 
+                font-size: 16px;
+                font-weight: 500;
+                Color: #8b8b99;
+                Letter-Spacing: 0.5px;
+                text-align: center;
+            }
+
+            .p51p2{
+            Font-Family: 'Poppins', sans-serif;
+             font-size: 13px;
+            font-weight: 500;
+            Color: #8b8b99;
+            Letter-Spacing: 0.5px;
+            text-align: center;
+            margin-bottom: 90px;
+
+            
+          
+           
+            }
+            .grid11{
+                Background-Color: #f5f6fb; 
+                Border-Radius: 45px 0px 45px 45px; 
+                padding: 44px;
+             
+            }
+            .p5i1{
+               
+                Border-Radius: 50%;
+                 Width: 80px;
+                 margin-left: 50%;
+                 margin-right: 50%;
+                 transform: translateX(-50%);
+                 
+            }
+
+            
+
+
+
+
+
+            .p5p2{
+                Font-Family: 'Poppins', sans-serif;
+                 font-size: 16px;
+                font-weight: 600; 
+                text-align: center;
+                Color: #8b8b99;
+                Font-Style: Italic;
+            }
+
+            .part-five{
+                height: 700px;
+                width: 100%;
+                
+            }
+
+            .grid-container5{
+                width: 100%;
+                height: 700px;
+                display: grid;
+                grid-template-columns: 65% 35%;
+
+            }
+
+            .p6i1{
+                width: 100%;
+                height: 100%;
+                
+                
+               
+               
+            }
+            .right-img{
+                background-image: url('https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png');
+                background-position: center;
+                background-size: cover;
+                width: 100%;
+                height: 700px;
+                text-align: center;
+                box-sizing: border-box;
+                padding: 30% 24px;
+                
+            }
+            .button2{
+                Background-Color: #f69dad;
+            }
+
+            .p6h1{
+                Font-Family: 'Poppins', sans-serif; 
+                font-size: 38px;
+                font-weight: 600;
+                text-align: center;
+                
+
+            }
+            .p6p1{
+                Font-Family: 'Poppins', sans-serif; 
+                font-size: 16px;
+                font-weight: 500;
+                Color: #8b8b99;
+                Letter-Spacing: 0.5px;
+                text-align: center;
+                padding: 0 95px;
+            }
+            .email{
+                margin-top: 39px;
+                border: 0;
+                font-size: 18px;
+                padding: 12px 38px 12px 18px;
+                outline: none;
+            }
+
+            .button2{
+                border: 0;
+                font-size: 18px;
+                margin-top: 12px;
+                margin-left: -55px;
+                color: white;
+                cursor: pointer;
+            }
+            .button2:hover{
+                background-color: white;
+                color: #f69dad;
+                outline: #f69dad;
+                border: 1px solid #f69dad;
+            }
+
+            .part-six{
+                height: 260px;
+                background-color: #e6fbf4;
+                display: flex;
+                justify-content: space-around;
+                text-align: center;
+                align-items: center;
+                margin-bottom: -33px;
+                
+
+            }
+            
+
+            .p7p1{
+               color: #86cdb5;
+                Font-Family: 'Poppins', sans-serif;
+                 font-size: 16px;
+                font-weight: 500; 
+            }
+            .p7h1{
+                Font-Family: 'Poppins', sans-serif;
+                 font-size: 48px;
+                font-weight: 600; 
+                margin-bottom: 8px;
+
+            
+
+            }
+
+            .part-seven{
+                height: 700px;
+                background-color: #f5f6fb;
+                margin-top: 0%;
+            }
+            .video{
+                width: 660px;
+                height: 370px;
+                margin-left: 50%;
+                margin-right: 50%;
+                transform: translateX(-50%);
+               
+            }
+            .p8h1{
+                text-align: center;
+                color: #9a9aa4;
+                Font-Family: 'Poppins', sans-serif; 
+                font-size: 38px;
+                font-weight: 600;
+                padding-top: 45px;
+                padding-bottom: 45px;
+               
+                
+               
+
+               
+            }
+
+            .part-eight{
+                height: 700px;
+                background-color: #f5f6fb;
+                margin-top: -25px;
+                display: grid;
+                grid-template-columns: auto auto;
+                padding: 0 134px;
+                margin-bottom: 0;
+
+                
+            }
+            .grid-last1{
+                padding: 44px;
+            }
+
+            .p9p1{
+                
+            Color: #91ac41;
+            font-size: 24px;
+            Font-Family: 'Caveat', cursive; 
+           
+            text-align: start;
+            margin-bottom: -37px;
+           
+            
+
+
+           
+            }
+
+            .p9h1{
+                Font-Family: 'Poppins', sans-serif;
+                 font-size: 44px;
+                Font-weight: 600;
+                color: black;
+                text-align: start;
+                
+
+            }
+
+            .p9p2{
+            Font-Family: 'Poppins', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            Color: #8b8b99;
+            Letter-Spacing: 0.5px;
+            text-align: start;
+            margin:40px 0;
+            
+          
+           
+            } 
+            .p9h2{
+                Font-Family: 'Poppins', sans-serif;
+                 font-size: 24px;
+                Font-weight: 600;
+                color: black;
+                text-align: start;
+                margin-bottom: -12px;
+                
+
+            }
+            .p9p3{
+            Font-Family: 'Poppins', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            Color: #8b8b99;
+            Letter-Spacing: 0.5px;
+            text-align: start;
+            line-height: 1.7;
+            margin-bottom:40px;
+            
+            
+          
+           
+            }
+
+
+            .form{
+                width: 100%;
+                margin-top: -12px;
+               
+            }
+            .form-item{
+            width: 100%;
+            Font-Family: 'Poppins', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            Color: #8b8b99;
+            Letter-Spacing: 0.5px;
+            text-align: start;
+            padding: 12px;
+            margin-bottom: 12px;
+            border: 1px solid lightgrey;
+            background-color: #f5f6fb;
+            outline: none;
+
+            }
+
+            .form-message{
+            width: 100%;
+            Font-Family: 'Poppins', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            Color: #8b8b99;
+            Letter-Spacing: 0.5px;
+            text-align: start;
+            padding: 12px;
+            padding-bottom: 24px;
+            margin-bottom: 12px;
+            border: 1px solid lightgrey;
+            background-color: #f5f6fb;
+            outline: none;
+
+            }
+
+            .form-submit{
+                Font-Family: 'Poppins', sans-serif;
+                padding: 12px 24px;
+                font-weight: 500;
+                color: white;
+                border: 0;
+                background-color: #91ac41;
+            }
+
+
+            footer{
+                height: 84px;
+                width: 100%;
+                Background-Color: #232323;
+                margin-top: -12px;
+            }
+            .footer-p{
+                text-align: center;
+                color: #f5f6fb;
+                padding: 31px 0;
+                Font-Family: 'Poppins', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+                
+            }
+
+            #emoji{
+                
+                font-size: 98px;
+                
+                color: white;
+                padding-top: 94px;
+               
+            }
+
+            .emoji11{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+
+            .steps1:hover #emoji{
+                animation: zoom1 200ms forwards  ;
+                
+                
+                cursor: pointer;
+            }
+            .steps2:hover #emoji{
+                animation: zoom1 200ms forwards  ;
+                
+                
+                cursor: pointer;
+            }
+            .steps3:hover #emoji{
+                animation: zoom1 200ms forwards  ;
+                
+                
+                cursor: pointer;
+            }
+            .steps4:hover #emoji{
+                animation: zoom1 200ms forwards  ;
+                
+                
+                cursor: pointer;
+            }
+
+            @keyframes zoom1 {
+  from {
+    transform: scale(1); /* Initial scale */
+  }
+  to {
+    transform: scale(1.09); /* Final scale */
+  }
+}
+
+
+
+
+
+            #emoji2{
+                
+                padding: 33px;
+                background-color: #e3b375 ;
+                width: 60px;
+                font-size: 60px;
+                border-radius: 50%;
+                color:  #f7eee2;
+               
+            }
+            .emoji22{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .grid1:hover #emoji2{
+                animation: zoom1 200ms forwards  ;
+                
+                
+                cursor: pointer;
+            }
+
+
+
+
+
+
+
+
+
+@media screen  and (max-width: 768px) {
+
+    .part-two{
+                    height: auto;
+                }
+
+                .p2h1{
+                    font-size:23px;
+                   padding: 230px 50px 20px 50px; 
+                   letter-spacing: 5.8px;
+                }
+
+                .p2p1{
+                    padding: 0px 30px 50px 30px;
+                    font-size: 12px; 
+                  
+                }
+                
+
+                #grid-container{
+                    display: block;
+
+                    
+                    
+                }
+                .steps1{
+                    margin: -16px;
+                }
+                .steps2{
+                    margin: -16px;
+                }
+                .steps3{
+                    margin: -16px;
+                }
+                .steps4{
+                    margin: -16px;
+                }
+              
+
+                .part-three{
+                    height: auto;
+                    padding-bottom: 24px;
+                    
+                }
+                .p4p1{
+                    padding-top: 44px;
+                    font-size: 18px;
+                }
+                .p4h1{
+                    font-size: 23px;
+                }
+                .p4p2{
+                    font-size: 12px;
+                }
+
+               
+
+                .grid-container2{
+                display: block;
+                padding: 0 100px 0 100px;
+               
+                
+            }
+
+            .p4p2{
+            
+            margin-bottom: 0;
+
+            
+          
+           
+            }
+
+
+            .grid1{
+               margin: 75px 0;
+            }
+
+            p{
+                    font-size: 13px;
+                }
+                h1{
+                    font-size: 23px;
+                }
+
+                .p4p3{
+                    font-size: 13px;
+                    
+                }
+                .p4h2{
+                    font-size: 23px;
+                }
+
+              
+
+            .part-four{
+                height: auto;
+            }
+
+            .grid-container3{
+                display: block;
+                
+                margin: 0 30px 0 30px;
+                
+                
+            }
+
+
+            .p51p2{
+            
+             font-size: 13px;
+            padding: 12px 40px;
+            margin-bottom: 50px;
+
+            
+          
+           
+            }
+
+
+
+            .p5h1{
+               
+                font-size: 12px;
+               
+            }
+            
+            .p5p1{
+                 
+                font-size: 13px;
+                
+            }
+            .grid11{
+                
+                margin-bottom: 34px;
+             
+            }
+            
+            .p5p2{
+                
+                 font-size: 13px;
+                
+                
+            }
+
+            .part-five{
+                height: auto;
+                width: auto;
+                
+            }
+
+            .grid-container5{
+                width: auto;
+                height: auto;
+                display: block;
+                
+
+            }
+
+            .p6i1{
+                width: 100%;
+                height: 100%;
+                
+                
+               
+               
+            }
+            .right-img{
+               
+                width: auto;
+                height: auto;
+                text-align: left;
+                
+                padding:12px 24px;
+                
+            }
+            .button2{
+                Background-Color: #f69dad;
+                text-align: left;
+            }
+
+            .p6h1{
+                
+                font-size: 23px;
+                
+                text-align: left;
+                
+
+            }
+            .p6p1{
+                
+                font-size: 13px;
+                
+                text-align: left;
+                padding: 0;
+            }
+            .email{
+                margin-top: 39px;
+                border: 0;
+                font-size: 13px;
+                padding: 12px 38px 12px 18px;
+                outline: none;
+
+            }
+
+            .button2{
+                border: 0;
+                font-size: 18px;
+                margin-top: 12px;
+                margin-left: 0;
+                
+
+                
+            }
+
+            .part-six{
+                height: auto;
+                
+                display: flex;
+                
+                flex-direction: column;
+                padding-bottom: 22px;
+                
+
+            }
+            
+
+            .p7p1{
+               
+                 font-size: 13px;
+               
+            }
+            .p7h1{
+                
+                 font-size: 38px;
+                
+
+            
+
+            }
+
+
+            .part-seven{
+                height: auto;
+                
+            }
+            .video{
+                width: auto;
+                height: auto;
+            
+               
+            }
+            .p8h1{
+                
+                font-size: 23px;
+               
+                padding-top: 45px;
+                padding-bottom: 20px;
+               
+                
+               
+
+               
+            }
+
+            .part-eight{
+                height: auto;
+                
+                padding-top: 84px;
+                display: block;
+                
+                padding-left: 12px;
+                padding-right: 0;
+                
+                
+
+                
+            }
+            .grid-last1{
+                padding:0;
+            }
+
+            .p9p1{
+                
+            Color: #91ac41;
+            font-size: 18px;
+           
+           
+            text-align: left;
+            padding-bottom: 0;
+            margin-bottom: -17px;
+           
+            
+
+
+           
+            }
+
+            .p9h1{
+               
+                 font-size: 23px;
+                margin-bottom: -24px;
+                text-align: left;
+                
+
+            }
+
+            .p9p2{
+            
+            font-size: 14px;
+            
+            margin-bottom: 34px;
+            
+          
+           
+            } 
+            .p9h2{
+               
+                 font-size: 17px;
+                
+                margin-bottom: -12px;
+                
+
+            }
+            .p9p3{
+           
+            font-size: 14px;
+           
+            margin-bottom:40px;
+            
+            
+          
+           
+            }
+
+
+            .form{
+                width: auto;
+                margin-top: -12px;
+                padding-bottom: 12px;
+               
+            }
+            .form-item{
+            width:80%;
+            
+            font-size: 12px;
+            
+            padding: 12px;
+            margin-bottom: 12px;
+            
+
+            }
+
+            .form-message{
+            width: 80%;
+            
+            font-size: 12px;
+            
+            padding: 12px;
+            padding-bottom: 24px;
+            margin-bottom: 12px;
+            
+
+            }
+
+            .form-submit{
+                
+                padding: 10px 20px;
+               
+                
+               
+            }
+
+
+            footer{
+                height: 44px;
+                width: auto;
+               
+                margin-top: -12px;
+            }
+            .footer-p{
+                
+                padding: 16px 0;
+                
+            font-size: 7px;
+            font-weight: 500;
+                
+            }
+
+
+
+            header{
+                background-color: rgb(255, 255, 255);
+                display: block;
+                margin: 0;
+                cursor: pointer;
+                position: fixed;
+                width: 100%;
+                height: auto;
+                padding: 24px;
+                margin-top: -40px;
+                z-index: 1000;
+                
+                
+               
+               
+            }
+           
+
+            
+               
+           
+            #left-menu{
+                display: inline-block;
+                align-items: center;
+                position: relative;
+                top: 30px;
+                margin-top: -35px;
+                
+                
+               
+            }
+            #right-menu{
+                display: none;
+            }
+
+
+            .mobile-button{
+                display: block;
+                text-align: end;
+                position: relative;
+                top: 30px;
+                
+
+                
+            }
+            
+           
+            
+            
+           
+         }
+
+
+
+        </style>
+        <title>css</title>
+    </head>
+    <body>
+       
+
+        <section>
+            <div id="part-two">
+                <h1 class="p2h1">Vegan Store Simple Website Template</h1>
+                <p class="p2p1"> With nutrition, all the vital functions of the body are connected. It is the source of the development of tissues and cells, their constant renewal, the saturation of man with energy.
+
+                </p>
+            </div>
+
+
+
+            <div id="grid-container">
+
+
+                <div class="steps1">
+                    <div class="emoji11">
+                    <i id="emoji" class="fa fa-cut"></i>
+                    </div>
+                   
+                    <h1 class="p3h1">Step 01</h1>
+                    <p class="p3p1">Vegetables are an integral part of the human diet. They are extremely useful because of the high content of carbohydrates, various acids, vitamins and active elements in the form, easy for digestion.
+
+                    </p>
+                   
+                </div>
+
+
+                <div class="steps2">
+                    <div class="emoji11">
+                    <i id="emoji" class="fa fa-paint-brush"></i>
+                    </div>
+                    <h1 class="p3h1">Step 02</h1>
+                    <p class="p3p1">Vegetables are an integral part of the human diet. They are extremely useful because of the high content of carbohydrates, various acids, vitamins and active elements in the form, easy for digestion.
+
+                    </p>
+                    
+                </div>
+
+
+                <div class="steps3">
+                    <div class="emoji11">
+                    <i id="emoji" class="fa fa-shopping-bag"></i>
+                    </div>
+                    <h1 class="p3h1">Step 03</h1>
+                    <p class="p3p1">Vegetables are an integral part of the human diet. They are extremely useful because of the high content of carbohydrates, various acids, vitamins and active elements in the form, easy for digestion.
+
+                    </p>
+                    
+                </div>
+
+
+                <div class="steps4">
+                    <div class="emoji11">
+                    <i id="emoji" class="far fa-smile"></i>
+                    </div>
+            
+                    <h1 class="p3h1">Step 04</h1>
+                    <p class="p3p1">Vegetables are an integral part of the human diet. They are extremely useful because of the high content of carbohydrates, various acids, vitamins and active elements in the form, easy for digestion.
+
+                    </p>
+                   
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="part-three">
+
+                <p class="p4p1">Fresh Food</p>
+                <h1 class="p4h1">Our Vegan Store!</h1>
+                <p class="p4p2">Radish contains a lot of fiber, pectin and mineral salts.</p>
+         
+
+
+
+            <div class="grid-container2">
+
+                <div class="grid1">
+                    <div class="emoji22">
+                    <i id="emoji2" class="fa fa-camera"></i>
+                 </div>
+                    <h1 class="p4h2">Fresh Vegetables</h1>
+                    <p class="p4p3">Use for cooking several types of vegetable oil.</p>
+                </div>
+
+                <div class="grid1">
+                    <div class="emoji22">
+                    <i id="emoji2" class="fa-rocket fa"></i>
+                    </div>
+                    <h1 class="p4h2">High Quality</h1>
+                    <p class="p4p3">This is the best source of essential fatty acids for the body</p>
+                </div>
+
+                <div class="grid1">
+                    <div class="emoji22">
+                    <i id="emoji2" class="fab fa-twitter"></i>
+                    </div>
+                    <h1 class="p4h2">Sale</h1>
+                    <p class="p4p3">It is very good, if in the kitchen there will always be several bottles with different oils.</p>
+                </div>
+
+                <div class="grid1">
+                    <div class="emoji22">
+                    <i id="emoji2" class="fab fa-weixin"></i>
+                    </div>
+                    <h1 class="p4h2">Best Price</h1>
+                    <p class="p4p3">Remember that unrefined oils are not suitable for heat treatment.</p>
+                </div>
+
+            </div>
+            </div>
+
+
+
+
+            <div class="part-four">
+                <p class="p4p1">Fresh Food</p>
+                <h1 class="p4h1">Our Vegan Shop!</h1>
+                <p class="p51p2">According to experts, any habit can be formed in 21 days. The same statement applies to healthy eating.</p>
+
+
+                <div class="grid-container3">
+                    <div class="grid11"> 
+                        
+                        <img class="p5i1" src="https://mobirise.com/extensions/organicamp/assets/images/face5.jpg" alt="img"> 
+                        
+                        <p class="p5p1">Sales consultants are very polite. Many of the products have tried and are ready to prompt and recommend to customers. The staff shows that they completely share the philosophy of proper nutrition, if you can say so.</p>
+                        <h1 class="p5h1">VERONICA KING</h1>
+                        <p class="p5p2">Cook</p>
+                    </div>
+
+                    <div class="grid11"> 
+                        <img class="p5i1" src="https://mobirise.com/extensions/organicamp/assets/images/face6.jpg" alt="img"> 
+                        <p class="p5p1">The assortment is very wide. From useful organic oils, cereals and teas to specific products for vegetarians, such as sausages and pies without meat.</p>
+                        <h1 class="p5h1">JIM CASH</h1>
+                        <p class="p5p2">Seller</p>
+                    </div>
+
+                    <div class="grid11"> 
+                        <img class="p5i1" src="https://mobirise.com/extensions/organicamp/assets/images/face7.jpg" alt="img"> 
+                        <p class="p5p1">I want to say a huge thank you to the management of the store and all its employees, I'm not a vegetarian, it would seem that the store is not for me, but it's not so, any person who comes here will find something useful.</p>
+                        <h1 class="p5h1">PETER GOODMAN</h1>
+                        <p class="p5p2">Manager</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+            <div class="part-five">
+                <div class="grid-container5">
+
+              
+
+                    <div class="left-img">
+                        <img class="p6i1" src="https://mobirise.com/extensions/organicamp/assets/images/19.jpg" alt="img">
+
+                    </div>
+
+                    <div class="right-img">
+                        <h1 class="p6h1">Follow Us</h1>
+                        <p class="p6p1">A wide range of products; many unusual and tasty products; courteous staff.</p>
+                       <input class="email" type="email" name="email" placeholder="Your Email"><br>
+                       
+                       <button class="button2">SUBSCRIBE</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="part-six">
+                <div class="flex1">
+                    <h1 class="p7h1">7</h1>
+                    <p class="p7p1">Year of experiences</p>
+                </div>
+
+                <div class="flex1">
+                    <h1 class="p7h1">123K</h1>
+                    <p class="p7p1">Happy Customerss</p>
+                </div>
+                
+                <div class="flex1">
+                    <h1 class="p7h1">72K</h1>
+                    <p class="p7p1">100% Satisfaction</p>
+                </div>
+
+                <div class="flex1">
+                    <h1 class="p7h1">13K</h1>
+                    <p class="p7p1">Detox Smoothies</p>
+                </div>
+
+                
+            </div>
+
+
+            <div class="part-seven">
+
+                <h1 class="p8h1">Vimeo Video</h1>
+                <div  >
+                    <iframe class="video" src="https://www.youtube.com/embed/e9320Q0rPs4?si=boz4ErCkHdopyGo5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
+                </div>
+                
+                
+            </div>
+
+
+            <div class="part-eight">
+                <div class="grid-last1">
+                    <p class="p9p1">Contact Us</p>
+                    <h1 class="p9h1">Address Information</h1>
+                    <p class="p9p2">Overeating is one of the most common causes of overweight and digestive problems.
+
+                    </p>
+                    <h2 class="p9h2">London Store</h2>
+                    <p class="p9p3"> Roeterseiland Campus Building E
+                        6th floor London<br>
+                        Monday to Friday : 9am to 8pm<br>
+                        examplemail.mail.com</p>
+
+                        <h2 class="p9h2">Berlin Store</h2>
+                        <p class="p9p3">Roeterseiland Campus Building E
+                            6th floor London<br>
+                            Monday to Friday : 9am to 8pm<br>
+                            examplemail.mail.com</p>
+                </div>
+
+                <div class="grid-last1">
+
+                    <p class="p9p1">Meet Our Team</p>
+                    <h1 class="p9h1">Get In Touch</h1>
+                    <p class="p9p2">The task of proper nutrition - to remove from the diet harmful food and enrich it useful.
+                    
+                        <div class="form1">
+                            <form class="form">
+                                <input class="form-item" type="text" name="name" placeholder="Name"><br>
+                                <input  class="form-item" type="text" name="contact-no" placeholder="Phone"><br>
+                                <input class="form-item" type="text" name="subject" placeholder="Subject"><br>
+                                <input class="form-item" type="email" name="email" placeholder="Email"><br>
+                                <input class="form-message" type="text" name="message" placeholder="Message"><br>
+                                <input class="form-submit" type="submit" value="SUBMIT NOW" placeholder="SUBMIT NOW">
+                            </form>
+
+                        </div>
+                        
+                    
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+            <p class="footer-p">© Copyright 2018 Mobirise - All Rights Reserved</p>
+        </footer>
+
+
+    
+        
+    </body>
+</html>
